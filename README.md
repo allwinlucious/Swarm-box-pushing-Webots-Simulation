@@ -15,10 +15,11 @@ All robots share the same controller hence behaviour based control approach has 
 The algorithm is as follws </br>
 ![FlowDiagram png](https://user-images.githubusercontent.com/15308488/160833026-b45e6626-4e49-4df2-b2a1-129522b20c47.jpg)</br>
 Current state of project : </br>
-Each robot can identify and distinguish between other robots, objective and goal.</br>![Screenshot 2022-03-30 140915](https://user-images.githubusercontent.com/15308488/160834348-6ea4d97f-99ea-4da3-b569-52c64b7bf1f5.jpg)</br>
-
+Each robot can identify and distinguish between other robots, objective and goal.</br>
 Each robot uses distance sensors to avoid collision with other robots.</br>
-Each robot can align itself to the box.</br></br>
+Each robot can align itself to the box.</br></br>![Screenshot 2022-03-30 140915](https://user-images.githubusercontent.com/15308488/160834348-6ea4d97f-99ea-4da3-b569-52c64b7bf1f5.jpg)</br>
+
+
 
 
 Future work :</br>

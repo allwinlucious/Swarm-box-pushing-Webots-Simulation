@@ -1,0 +1,170 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.33973887144808473 0.7576628857212783 0.557247208003492 3.765306248214441
+  position -0.054301335835175 1.524229794570754 -0.1472263815215516
+}
+TexturedBackground {
+  texture "dusk"
+  skybox FALSE
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+}
+E-puck {
+  translation 0.09596663915406432 -6.396823141630904e-05 0.009002942494098857
+  rotation -4.934511667970117e-08 0.9999999999998773 4.926739439575849e-07 3.0365017729743515
+  controller "turn_bot_object"
+  turretSlot [
+    InertialUnit {
+      rotation 0 1 0 1.57079632679
+    }
+    Solid {
+      translation 0 -0.02 -0.01
+      boundingObject Cylinder {
+        height 0.05
+        radius 0.04
+      }
+    }
+  ]
+  groundSensorsSlot [
+    Camera {
+      translation -0.08 1.59268e-05 0.05
+      rotation 0 0 1 1.57
+      name "camera2"
+      fieldOfView 1.5
+      antiAliasing TRUE
+      zoom Zoom {
+      }
+      recognition Recognition {
+        segmentation TRUE
+      }
+    }
+  ]
+}
+E-puck {
+  translation 0.10000000000000414 -6.396824233273826e-05 0.20999999990087628
+  rotation 0.0003728598419050563 2.7861918311385225e-08 0.9999999304877664 5.953474006268448e-06
+  name "e-puck(1)"
+  controller ""
+  turretSlot [
+    InertialUnit {
+      rotation 0 1 0 1.57079632679
+    }
+    Solid {
+      translation 0 -0.02 -0.01
+      model "epuck"
+      boundingObject Cylinder {
+        height 0.05
+        radius 0.04
+      }
+      recognitionColors [
+        0.333333 1 0.498039
+      ]
+    }
+  ]
+  groundSensorsSlot [
+    Camera {
+      translation -0.08 1.59268e-05 0.05
+      rotation 0 0 1 1.57
+      name "camera2"
+      fieldOfView 1
+      antiAliasing TRUE
+      recognition Recognition {
+        segmentation TRUE
+      }
+    }
+  ]
+}
+Solid {
+  translation -0.002403989301936913 0.049960758752265466 0.5540063331013639
+  rotation -1.8007269157077585e-12 1 1.564137264789282e-10 0.02402283703338081
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
+      }
+    }
+  ]
+  name "box"
+  model "object"
+  boundingObject Cylinder {
+    height 0.1
+    radius 0.1
+  }
+  physics Physics {
+    density -1
+    mass 0.1
+  }
+  recognitionColors [
+    0 1 1
+  ]
+}
+Solid {
+  translation -0.4100004379087169 0.049960758750746084 0.7200000001440551
+  rotation 0.0003365429116769232 -4.5646861950138175e-07 0.9999999433693285 3.757503708077651e-12
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
+      }
+    }
+  ]
+  name "box(1)"
+  model "dupe"
+  boundingObject Cylinder {
+    height 0.1
+    radius 0.1
+  }
+  physics Physics {
+    density -1
+    mass 0.1
+  }
+  recognitionColors [
+    0 1 1
+  ]
+}
+Solid {
+  translation 1.3400002028813758 0.046076286359654405 -0.8699999984648029
+  rotation -1.6717547261138215e-13 1 8.890179453494851e-10 -7.639935433222926e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.976471 0.313725
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+  name "target"
+  model "target"
+  boundingObject Box {
+    size 0.1 0.1 1
+  }
+  physics Physics {
+  }
+  recognitionColors [
+    1 1 0
+  ]
+}

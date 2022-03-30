@@ -1,6 +1,6 @@
 # Swarm-box-pushing-Webots-Simulation 
 
-This is a work in progress.<\br>
+This is a work in progress.</br>
 The goal of this project is to implement Collaborative Box pushing using multiple "e-puck" robots.<\br>
 The robots of a swarm robotic system are relatively simple and
 incapable when compared to the tasks that they are ex-

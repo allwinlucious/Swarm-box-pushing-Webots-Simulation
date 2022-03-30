@@ -3,16 +3,12 @@
 This is a work in progress.</br>
 The goal of this project is to implement Collaborative Box pushing using multiple "e-puck" robots.</br>
 The robots of a swarm robotic system are relatively simple and
-incapable when compared to the tasks that they are ex-
-pected to accomplished. Thus, it is important to have
+incapable when compared to the tasks that they are expected to accomplished. Thus, it is important to have
 enough units and a distributed control law that is effective.
-Because the individual behaviour of social insects often in-
-spires the control law design in swarm robotic systems, the
-control law of individual robots is usually referred to as indi-
-vidual behaviour. The behaviours of the robots are usually
+Because the individual behaviour of social insects often inspires the control law design in swarm robotic systems, the
+control law of individual robots is usually referred to as individual behaviour. The behaviours of the robots are usually
 identical and make use of only local information. Combining
-these features, a swarm robot system offers potential advan-
-tages in robustness, 
+these features, a swarm robot system offers potential advantages in robustness, 
 exibility and scalability.</br>
 All robots share the same controller hence behaviour based control approach has been used,  each robot recognises which state it is in and then decides which behaviour to follow,
 
